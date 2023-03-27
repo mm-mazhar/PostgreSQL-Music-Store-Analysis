@@ -39,5 +39,31 @@ customers who spent this amount
 * Postgre SQL
 * PgAdmin4
 
+## Connect to Database
+`git clone https://github.com/mm-mazhar/PostgreSQL-Music-Store-Analysis.git`
+
+#### Access the PostgreSQL server from psql with a specific user
+`psql -U [username];` <br>
+or
+<br>
+`psql -U postgres #default user`
+
+#### Show Databases
+`\l`
+
+#### Connect to a specific database
+`\c DATABASE_NAME;`
+
+#### Create Database
+`CREATE DATABASE dbmusic;`
+
+#### Import Database from Command Line
+`psql -d DATABASE_NAME -f FILE_PATH`
+
+or
+<br>
+#### for the PostgreSQL custom-format dump
+`pg_restore -U USER_NAME -d DATABASE_NAME < FILE_PATH`
+
 Schema- Music Store Database  
 ![MusicDatabaseSchema](https://i.imgur.com/ruqRzmH.png)
